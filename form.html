@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login esimerkki</title>
+
+  <link href="style.css" rel="stylesheet" />
+
+</head>
+<body>
+
+  <form action="https://10.120.32.94/test/form-submission/" method="post">
+
+    <label for="username">Username</label>
+    <input
+      type="text"
+      name="username"
+      id="username"
+      placeholder="Username"
+      required
+    />
+
+    <label for="name">Name</label>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Name"
+      required
+    />
+
+    <label for="password">
+      Password
+    </label>
+    <input type="password" id="password" name="password" placeholder="Password" class="myPasswordField" />
+
+    <label for="today">Today's date</label>
+    <input type="date" id="today" name="todays-date" />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="number">Valitse numero</label>
+    <input type="number" id="number" name="numero" step="1" min="-10" max="20" />
+
+    <label for="kuva">Kuva</label>
+    <input type="file" name="kuva" id="kuva" accept="image/*" />
+
+    <label for="food">Lempiruoka</label>
+    <select name="food" id="food">
+      <option value="riisi">Riisi</option>
+      <option value="peruna">Peruna</option>
+      <option value="pizza">Pizza</option>
+    </select>
+
+
+    <div class="checkbox-container">
+      <input type="checkbox" id="accept-1" name="accept" value="0" />
+      <label for="accept-1">Hyväksy käyttöehdot</label>
+    </div>
+    <div class="checkbox-container">
+      <input type="checkbox" id="accept-2" name="accept" value="1" />
+      <label for="accept-2">Hyväksy käyttöehdot</label>
+    </div>
+    <div class="checkbox-container">
+      <input type="checkbox" id="accept-3" name="accept" value="2" />
+      <label for="accept-3">Hyväksy käyttöehdot</label>
+    </div>
+    <div class="checkbox-container">
+      <input type="checkbox" id="accept-4" name="accept" value="3" />
+      <label for="accept-4">Hyväksy käyttöehdot</label>
+    </div>
+
+
+    <div class="checkbox-container">
+      Valitse status:<br />
+      <input type="radio" id="opiskelija" name="status" value="1" />
+      <label for="opiskelija">Opiskelija</label>
+      <input type="radio" id="ope" name="status" value="2" />
+      <label for="ope">Opettaja</label>
+    </div>
+
+    <button type="reset">Tyhjennä lomake</button>
+    <button type="submit">Luo tunnus</button>
+
+  </form>
+
+</body>
+</html>
+
+
